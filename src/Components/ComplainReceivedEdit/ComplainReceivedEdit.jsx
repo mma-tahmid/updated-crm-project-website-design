@@ -1,17 +1,16 @@
 import React from 'react';
-import "./complainReceived.css"
 import { MdModeEdit } from "react-icons/md";
-import { RiArrowDropDownLine } from "react-icons/ri";
 
-const ComplainReceived = () => {
+const ComplainReceivedEdit = () => {
     return (
         <>
+
             <div className='conatiner mx-3 mt-2'>
 
 
                 <div className='px-6 py-6 shadow-md sm:flex lg:justify-between sm:justify-between'>
 
-                    <div className='text-[#E74A3B] sm:text-left text-center text-decoration-1'>COMPLAIN RECEIVED</div>
+                    <div className='text-[#E74A3B] sm:text-left text-center text-decoration-1'>COMPLAIN RECEIVED Edit</div>
 
                     <div className='flex justify-center'>
                         <div className=' mt-2 w-[191px] sm:w-[191px] bg-[#F9333E] text-[#FFF] px-4 rounded text-decoration-2'> Existing Customer Invoice </div>
@@ -214,9 +213,8 @@ const ComplainReceived = () => {
 
             </div>
 
-
         </>
     );
 };
 
-export default ComplainReceived;
+export default ComplainReceivedEdit;

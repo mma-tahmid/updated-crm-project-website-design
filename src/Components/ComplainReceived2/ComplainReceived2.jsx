@@ -1,11 +1,101 @@
-import React from 'react';
-import "./complainReceived.css"
-import { MdModeEdit } from "react-icons/md";
-import { RiArrowDropDownLine } from "react-icons/ri";
+import React, { useState } from 'react';
+import { MdModeEdit } from 'react-icons/md';
+import { IoSearchSharp } from "react-icons/io5";
+import { Table } from 'antd';
 
-const ComplainReceived = () => {
+const ComplainReceived2 = () => {
+
+    const columnss = [
+        {
+            key: "1",  // data index a je value dibo oi same value key hisabe hobe
+            title: "Invoice no",
+            dataIndex: "invoiceNo",
+        },
+
+        {
+            key: "2",  // data index a je value dibo oi same value key hisabe hobe
+            title: "Gurranty card no",
+            dataIndex: "gurrantyCardNo",
+            responsive: ['md']
+        },
+
+        {
+            key: "3",  // data index a je value dibo oi same value key hisabe hobe
+            title: "Ledger name",
+            dataIndex: "leaderName",
+        },
+
+        {
+            key: "4",  // data index a je value dibo oi same value key hisabe hobe
+            title: "Mobile no",
+            dataIndex: "mobileNo",
+            responsive: ['md']
+        },
+
+        {
+            key: "5",  // data index a je value dibo oi same value key hisabe hobe
+            title: "Ledger address ",
+            dataIndex: "leaderAddress",
+            responsive: ['md']
+        },
+
+        {
+            key: "6",  // data index a je value dibo oi same value key hisabe hobe
+            title: "Postal code",
+            dataIndex: "postalCode",
+            responsive: ['md']
+        },
+    ]
+
+
+    const expandedRowRender = (record) => (
+
+        // Design In THIS PART
+        <div className="grid grid-cols-2 gap-x-32">
+            <div> Gurranty card no: </div>
+            <div> {record.gurrantyCardNo}</div>
+            <div> Mobile No </div>
+            <div> {record.mobileNo}</div>
+            <div>Ledger address	</div>
+            <div>{record.leaderAddress}</div>
+            <div>Postal code </div>
+            <div>{record.postalCode}</div>
+        </div>
+
+
+
+    )
+
+    const [dataSources, setDataSource] = useState([
+        {
+            key: "1",
+            invoiceNo: 123446,
+            gurrantyCardNo: 2424288,
+            leaderName: "ABC",
+            mobileNo: "01879278983",
+            leaderAddress: "Dhaka",
+            postalCode: "12345"
+
+        },
+
+        {
+            key: "2",
+            invoiceNo: 122343,
+            gurrantyCardNo: 133234,
+            leaderName: "ABC",
+            mobileNo: "0178345666",
+            leaderAddress: "Sylhet",
+            postalCode: "1256"
+
+        },
+
+
+    ])
+
+
+
     return (
-        <>
+        <div>
             <div className='conatiner mx-3 mt-2'>
 
 
@@ -146,49 +236,81 @@ const ComplainReceived = () => {
                 <div className=' shadow-md  mt-5 '>
 
                     <div className='pb-4'>
-                        <div className='py-6 bg-[#FDECEC] flex justify-center gap-x-4'>
-                            <div className='text-[#E74A3B]  text-decoration-4 my-auto'>Problem Box</div>
-                            <div className='text-[#E74A3B] my-auto shadow-lg border border-[#E74A3B] rounded-md px-1'> <MdModeEdit /> </div>
+                        <div className='py-6 bg-[#FDECEC] sm:flex sm:justify-between sm:px-10 '>
+
+                            <div className='text-[#E74A3B] text-center  text-[16px] font-[500] my-auto'>Existing Invoice Info </div>
+
+                            <div className='flex justify-center gap-x-2 mt-4 '>
+                                {/* search input Field */}
+                                <div className="relative">
+                                    <input className=" pl-3 pr-10 w-[177px]  h-[34px] rounded-[5px] bg-[#FFF] border-[1px] border-[#D9D9D9]  focus:outline-none focus:border-[#E74A3B] border-solid" placeholder="Search here" type="search" />
+                                    <div className="absolute top-[2px] left-[150px]  ">
+                                        <IoSearchSharp className="text-[#FFF]  bg-[#EB5757] rounded-[3px] w-[25px] h-[30px] " />
+                                    </div>
+                                </div>
+
+                                {/* Close Button */}
+
+                                <button className='bg-[#FA6669] text-[#FFF] rounded-sm  w-[76px] h-[31px]'> Close</button>
+
+                            </div>
+                        </div>
+
+
+                        <div className='pt-2'>
+
+                            <div className='sm:flex sm:justify-around '>
+                                <div className=''>
+                                    <input type="checkbox" name="" id="" />
+                                    <span className='px-1 text-[14px] font-[500]'>Inventory</span>
+                                </div>
+
+                                <div className=''>
+                                    <input type="checkbox" name="" id="" />
+                                    <span className='px-1 text-[14px] font-[500]'>Customer name</span>
+                                </div>
+
+                                <div className=''>
+                                    <input type="checkbox" name="" id="" />
+                                    <span className='px-1 text-[14px] font-[500]'>Mobile no</span>
+                                </div>
+
+                                <div className=''>
+                                    <input type="checkbox" name="" id="" />
+                                    <span className='px-1 text-[14px] font-[500]'>Gurranty card no</span>
+                                </div>
+
+                                <div className=''>
+                                    <input type="checkbox" name="" id="" />
+                                    <span className='px-1 text-[14px] font-[500]'>SB no</span>
+                                </div>
+
+                            </div>
 
                         </div>
 
-                        <div className=' mt-3 flex sm:flex lg:flex border-b-2 border-[#B9B9B9] '>
-                            <div className='w-[60%] pl-10'>Problem Name</div>
-                            <div className='w-[30%]'>Description</div>
+                        {/* TABLE PART */}
 
+                        <div className='pt-1'>
+                            <Table
+                                columns={columnss}
+                                dataSource={dataSources}
+
+                                pagination={{ pageSize: 2 }}
+
+                                expandable={{
+                                    expandedRowRender,
+                                    defaultExpandedRowKeys: ['0'],
+                                }}
+                            //pagination={false}
+                            >
+                            </Table >
                         </div>
 
-                        <div className='mt-2'>
-                            <div className='px-8 py-1'>
-                                <div className='sm:flex flex'>
-                                    <div className='w-[6%] text-center text-[#FA6669] '><span className='bg-[#FDECEC] px-3'>1755</span></div>
-                                    <div className='w-[10%]'></div>
-                                    <div className='w-[30%]'>Refrigarator Isssue</div>
-                                    <div className='w-[10%]'> </div>
-                                    <div className='w-[44%]'>THis is </div>
-                                </div>
-                            </div>
 
-                            <div className='px-8 py-1'>
-                                <div className='flex'>
-                                    <div className='w-[6%] text-center text-[#FA6669] '><span className='bg-[#FDECEC] px-3'>1755</span></div>
-                                    <div className='w-[10%]'></div>
-                                    <div className='w-[30%]'>Refrigarator Isssue</div>
-                                    <div className='w-[10%]'> </div>
-                                    <div className='w-[44%]'>THis is </div>
-                                </div>
-                            </div>
 
-                            <div className='px-8 py-1'>
-                                <div className='flex'>
-                                    <div className='w-[6%] text-center text-[#FA6669] '><span className='bg-[#FDECEC] px-3'>1755</span></div>
-                                    <div className='w-[10%]'></div>
-                                    <div className='w-[30%]'>Refrigarator Isssue</div>
-                                    <div className='w-[10%]'> </div>
-                                    <div className='w-[44%]'>THis is </div>
-                                </div>
-                            </div>
-                        </div>
+
+
                     </div>
 
 
@@ -200,7 +322,7 @@ const ComplainReceived = () => {
 
                 {/* Button Part */}
 
-                <div className='flex justify-center gap-x-4 mt-4 mb-4'>
+                {/* <div className='flex justify-center gap-x-4 mt-4 mb-4'>
 
                     <button className='text-[#FFF] bg-[#FA6669] w-[117px] h-[40px] rounded-[5px]'>Edit</button>
 
@@ -210,13 +332,11 @@ const ComplainReceived = () => {
 
                     <button className='text-[#F9333E] border-2 border-[#F9333E] w-[117px] h-[40px] rounded-[5px]'>Exit</button>
 
-                </div>
+                </div> */}
 
             </div>
-
-
-        </>
+        </div>
     );
 };
 
-export default ComplainReceived;
+export default ComplainReceived2;

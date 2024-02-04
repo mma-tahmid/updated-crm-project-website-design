@@ -5,7 +5,17 @@ const Home = () => {
     return (
         <div>
 
-            <Link to={"/complain-received"}> Complain Received </Link>
+            <div>
+                <Link to={"/complain-received"}> Complain Received </Link>
+            </div>
+
+            <div>
+                <Link to={"/complain-received2"}> Complain Received 2 </Link>
+            </div>
+
+            <div>
+                <Link to={"/complain-received-edit"}> Complain Received/Edit </Link>
+            </div>
 
         </div>
     );
