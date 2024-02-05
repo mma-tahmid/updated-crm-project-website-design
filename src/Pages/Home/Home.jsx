@@ -17,6 +17,10 @@ const Home = () => {
                 <Link to={"/complain-received-edit"}> Complain Received/Edit </Link>
             </div>
 
+            <div>
+                <Link to={"/complain-received-day-book"}> Complain Received Day Book </Link>
+            </div>
+
         </div>
     );
 };
