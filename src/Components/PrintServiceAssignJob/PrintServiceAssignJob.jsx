@@ -1,9 +1,12 @@
-import { DatePicker, Space, Table } from 'antd';
+import { Table } from 'antd';
 import React, { useState } from 'react';
 import { IoSearchSharp } from 'react-icons/io5';
 import { MdModeEdit } from 'react-icons/md';
 
-const SalesServiceJobAssign = () => {
+const PrintServiceAssignJob = () => {
+
+
+
 
 
     const columnss = [
@@ -110,10 +113,6 @@ const SalesServiceJobAssign = () => {
 
 
 
-
-
-
-
     return (
         <>
 
@@ -121,7 +120,7 @@ const SalesServiceJobAssign = () => {
 
                 <div className='px-6 py-6 shadow-md sm:flex lg:justify-between sm:justify-between'>
 
-                    <div className='text-[#E74A3B] sm:text-left text-center text-decoration-1'>SALES SERVICE JOB ASSIGN</div>
+                    <div className='text-[#E74A3B] sm:text-left text-center text-decoration-1'>Print Service Job</div>
 
                     <div className='flex justify-center gap-x-3'>
                         {/* No Content */}
@@ -137,7 +136,7 @@ const SalesServiceJobAssign = () => {
                     <div className='bg-[#FDECEC] sm:flex sm:justify-between'>
                         <div className='py-6 px-10  flex gap-x-3  '>
 
-                            <div className='shadow-lg text-[#E74A3B]  border border-[#E74A3B] rounded-md ]   icon-design-6 w-[22px]'> <MdModeEdit className='mt-[3px] mx-[2px]' /></div>
+                            <div className='shadow-lg text-[#E74A3B]  border border-[#E74A3B] rounded-md ]   icon-design-7 w-[22px]'> <MdModeEdit className='mt-[3px] mx-[2px]' /></div>
 
                             <div className='  text-[#E74A3B] text-decoration-3 '>Searching Operation
                             </div>
@@ -235,9 +234,12 @@ const SalesServiceJobAssign = () => {
 
                 <div className='flex justify-center gap-x-4 mt-4 mb-4'>
 
-                    <button className='text-[#FFF] bg-[#FA6669] w-[117px] h-[40px] rounded-[5px]'>Assign</button>
+                    <button className='text-[#FFF] bg-[#FA6669] w-[117px] h-[40px] rounded-[5px]'>Preview</button>
 
-                    <button className='text-[#F9333E] border-2 border-[#F9333E] w-[117px] h-[40px] rounded-[5px]'>Clear</button>
+                    <button className='text-[#F9333E] border-2 border-[#F9333E] w-[117px] h-[40px] rounded-[5px]'>Print</button>
+
+                    <button className='text-[#FFF] bg-[#FA6669] w-[117px] h-[40px] rounded-[5px]'>Clear</button>
+
                     <button className='text-[#F9333E] border-2 border-[#F9333E] w-[117px] h-[40px] rounded-[5px]'>Close</button>
 
                 </div>
@@ -248,4 +250,4 @@ const SalesServiceJobAssign = () => {
     );
 };
 
-export default SalesServiceJobAssign;
+export default PrintServiceAssignJob;
