@@ -53,6 +53,64 @@ const Home = () => {
                 <Link to={"/after-sales-installation-job-book"}> After-Sales-Installation-Job-Book </Link>
             </div>
 
+            <div>
+                <Link to={"/new-version-after-sales-installation-job-book"}> New Version After Sales Installation Job Book </Link>
+            </div>
+
+            <div>
+                <Link to={"/spread-operator"}> Spread Operator </Link>
+            </div>
+
+            <div>
+                <Link to={"/service-bill"}> Service Bill </Link>
+            </div>
+
+            <div>
+                <Link to={"/sb-day-book"}> SB Day Book </Link>
+            </div>
+
+            <div>
+                <Link to={"/sb-ar-report"}> Sb Ar Report </Link>
+            </div>
+
+            <div>
+                <Link to={"/service-bill-received"}> Service Bill Received  </Link>
+            </div>
+
+            <div>
+                <Link to={"/installation-job-assign"}> Installation Job Assign </Link>
+            </div>
+
+            <div>
+                <Link to={"/engineer-assign-to-installation-job"}> Engineer-assign-to-installation-job </Link>
+            </div>
+
+            <div>
+                <Link to={"/item-issues-order"}> item issues Order </Link>
+            </div>
+
+            <div>
+                <Link to={"/installation-status-update"}> Installation Status Update </Link>
+            </div>
+
+            <div>
+                <Link to={"/job-divided-form"}> Job Divided Form</Link>
+            </div>
+
+            <div>
+                <Link to={"/installation-report-menu"}> Installation Report Menu </Link>
+            </div>
+
+            <div>
+                <Link to={"/vendorOr-technician-changeOn-assign-job"}> Vendor Or technician change On assign job </Link>
+            </div>
+
+            <div>
+                <Link to={"/cdc-job-re-open"}> CDC Job Re Open </Link>
+            </div>
+
+
+
         </div>
     );
 };

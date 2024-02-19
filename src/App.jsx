@@ -14,6 +14,20 @@ import AfterSaleSalesServiceConfiguration from './UpdatedPages/AfterSaleSalesSer
 import AfterSalesConfiguration from './UpdatedPages/AfterSalesConfiguration'
 import AfterSalesShowroomSbMenu from './UpdatedPages/AfterSalesShowroomSbMenu'
 import AfterSalesInstallationJobBook from './UpdatedPages/AfterSalesInstallationJobBook'
+import NewVersionAfterSalesInstallationJobBook from './UpdatedPages/NewVersionAfterSalesInstallationJobBook'
+import SpreadOperator from './UpdatedPages/SpreadOperator'
+import ServiceBill from './UpdatedPages/ServiceBill'
+import SBDayBook from './UpdatedPages/SBDayBook'
+import SbArReport from './UpdatedPages/SbArReport'
+import ServiceBillReceived from './UpdatedPages/ServiceBillReceived'
+import InstallationJobAssign from './UpdatedPages/InstallationJobAssign'
+import EngineerAssignToInstallationJob from './UpdatedPages/EngineerAssignToInstallationJob'
+import ItemIssuesOrder from './UpdatedPages/ItemIssuesOrder'
+import InstallationStatusUpdate from './UpdatedPages/InstallationStatusUpdate'
+import JobDividedFrom from './UpdatedPages/JobDividedFrom'
+import InstallationReportMenu from './UpdatedPages/InstallationReportMenu'
+import VendorOrTechnicianChangeOnAssignJob from './UpdatedPages/VendorOrTechnicianChangeOnAssignJob'
+import CDCJobReOpen from './UpdatedPages/CDCJobReOpen'
 
 
 function App() {
@@ -41,6 +55,21 @@ function App() {
           <Route path="after-sales-configuration" element={<AfterSalesConfiguration />} />
           <Route path="after-sales-show-room-sbMenu" element={<AfterSalesShowroomSbMenu />} />
           <Route path="after-sales-installation-job-book" element={<AfterSalesInstallationJobBook />} />
+          <Route path="new-version-after-sales-installation-job-book" element={<NewVersionAfterSalesInstallationJobBook />} />
+          <Route path="spread-operator" element={<SpreadOperator />} />
+          <Route path="service-bill" element={<ServiceBill />} />
+          <Route path="sb-day-book" element={<SBDayBook />} />
+          <Route path="sb-ar-report" element={<SbArReport />} />
+          <Route path="service-bill-received" element={<ServiceBillReceived />} />
+          <Route path="installation-job-assign" element={<InstallationJobAssign />} />
+          <Route path="engineer-assign-to-installation-job" element={<EngineerAssignToInstallationJob />} />
+          <Route path="item-issues-order" element={<ItemIssuesOrder />} />
+          <Route path="installation-status-update" element={<InstallationStatusUpdate />} />
+          <Route path="job-divided-form" element={<JobDividedFrom />} />
+          <Route path="installation-report-menu" element={<InstallationReportMenu />} />
+          <Route path="vendorOr-technician-changeOn-assign-job" element={<VendorOrTechnicianChangeOnAssignJob />} />
+          <Route path="cdc-job-re-open" element={<CDCJobReOpen />} />
+
 
         </Routes>
       </BrowserRouter>
