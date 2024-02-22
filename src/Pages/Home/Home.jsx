@@ -109,6 +109,14 @@ const Home = () => {
                 <Link to={"/cdc-job-re-open"}> CDC Job Re Open </Link>
             </div>
 
+            <div>
+                <Link to={"/service-card-on-customer-complain"}> Service Card On Customer Complain </Link>
+            </div>
+
+            <div>
+                <Link to={"/sb-report-preview"}> SB Report preview_print preview</Link>
+            </div>
+
 
 
         </div>

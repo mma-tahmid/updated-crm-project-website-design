@@ -28,6 +28,8 @@ import JobDividedFrom from './UpdatedPages/JobDividedFrom'
 import InstallationReportMenu from './UpdatedPages/InstallationReportMenu'
 import VendorOrTechnicianChangeOnAssignJob from './UpdatedPages/VendorOrTechnicianChangeOnAssignJob'
 import CDCJobReOpen from './UpdatedPages/CDCJobReOpen'
+import ServiceCardOnCustomerComplain from './UpdatedPages/ServiceCardOnCustomerComplain'
+import SbReportPreview from './UpdatedPages/SbReportPreview'
 
 
 function App() {
@@ -69,6 +71,8 @@ function App() {
           <Route path="installation-report-menu" element={<InstallationReportMenu />} />
           <Route path="vendorOr-technician-changeOn-assign-job" element={<VendorOrTechnicianChangeOnAssignJob />} />
           <Route path="cdc-job-re-open" element={<CDCJobReOpen />} />
+          <Route path="service-card-on-customer-complain" element={<ServiceCardOnCustomerComplain />} />
+          <Route path="sb-report-preview" element={<SbReportPreview />} />
 
 
         </Routes>
