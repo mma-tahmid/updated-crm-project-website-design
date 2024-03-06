@@ -117,6 +117,38 @@ const Home = () => {
                 <Link to={"/sb-report-preview"}> SB Report preview_print preview</Link>
             </div>
 
+            <div>
+                <Link to={"/problem-list-preview"}> Problem list  Preview </Link>
+            </div>
+
+            <div>
+                <Link to={"/sb-report-day-book-report-preview"}> SB Report Day Book Report Preview </Link>
+            </div>
+
+            <div>
+                <Link to={"/crm-form-one"}> CRM Form One </Link>
+            </div>
+
+            <div>
+                <Link to={"/complain-master-report-preview"}> Complain Master Report Preview </Link>
+            </div>
+
+            <div>
+                <Link to={"/complain-master-report"}> Complain Master Report </Link>
+            </div>
+
+            <div>
+                <Link to={"/sr-pages"}> SR  Pages </Link>
+            </div>
+
+            <div>
+                <Link to={"/purchase-order-preview"}> Purchase Order Preview  </Link>
+            </div>
+
+            <div>
+                <Link to={"/after-sales-installation-menu"}> After Sales Installation Menu </Link>
+            </div>
+
 
 
         </div>

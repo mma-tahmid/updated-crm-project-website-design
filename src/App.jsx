@@ -30,6 +30,14 @@ import VendorOrTechnicianChangeOnAssignJob from './UpdatedPages/VendorOrTechnici
 import CDCJobReOpen from './UpdatedPages/CDCJobReOpen'
 import ServiceCardOnCustomerComplain from './UpdatedPages/ServiceCardOnCustomerComplain'
 import SbReportPreview from './UpdatedPages/SbReportPreview'
+import ProblemlistPreview from './UpdatedPages/ProblemlistPreview'
+import SbReportDayBookReportPreview from './UpdatedPages/SbReportDayBookReportPreview'
+import CrmForm1 from './UpdatedPages/CrmForm1'
+import ComplainMasterReportPreview from './UpdatedPages/ComplainMasterReportPreview'
+import ComplainMasterReport from './UpdatedPages/ComplainMasterReport'
+import SrPages from './UpdatedPages/SrPages'
+import PurchaseOrderPreview from './UpdatedPages/PurchaseOrderPreview'
+import AfterSalesInstallationMenu from './UpdatedPages/AfterSalesInstallationMenu'
 
 
 function App() {
@@ -73,6 +81,17 @@ function App() {
           <Route path="cdc-job-re-open" element={<CDCJobReOpen />} />
           <Route path="service-card-on-customer-complain" element={<ServiceCardOnCustomerComplain />} />
           <Route path="sb-report-preview" element={<SbReportPreview />} />
+          <Route path="problem-list-preview" element={<ProblemlistPreview />} />
+          <Route path="sb-report-day-book-report-preview" element={<SbReportDayBookReportPreview />} />
+          <Route path="crm-form-one" element={<CrmForm1 />} />
+          <Route path="complain-master-report-preview" element={<ComplainMasterReportPreview />} />
+
+          <Route path="complain-master-report" element={<ComplainMasterReport />} />
+          <Route path="sr-pages" element={<SrPages />} />
+          <Route path="purchase-order-preview" element={<PurchaseOrderPreview />} />
+          <Route path="after-sales-installation-menu" element={<AfterSalesInstallationMenu />} />
+
+
 
 
         </Routes>
