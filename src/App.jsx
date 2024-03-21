@@ -38,6 +38,10 @@ import ComplainMasterReport from './UpdatedPages/ComplainMasterReport'
 import SrPages from './UpdatedPages/SrPages'
 import PurchaseOrderPreview from './UpdatedPages/PurchaseOrderPreview'
 import AfterSalesInstallationMenu from './UpdatedPages/AfterSalesInstallationMenu'
+import ProblemCreate from './UpdatedPages/ProblemCreate'
+import ServiceBillExistingInvoiceBill from './UpdatedPages/ServiceBillExistingInvoiceBill'
+import MaterialsIsssueGatePass from './UpdatedPages/MaterialsIsssueGatePass'
+import MaterialsRequisition from './UpdatedPages/MaterialsRequisition'
 
 
 function App() {
@@ -90,6 +94,13 @@ function App() {
           <Route path="sr-pages" element={<SrPages />} />
           <Route path="purchase-order-preview" element={<PurchaseOrderPreview />} />
           <Route path="after-sales-installation-menu" element={<AfterSalesInstallationMenu />} />
+
+          <Route path="problem-create" element={<ProblemCreate />} />
+          <Route path="service-bill-existing-invoice-bill" element={<ServiceBillExistingInvoiceBill />} />
+          <Route path="materials-issues-gate-pass" element={<MaterialsIsssueGatePass />} />
+          <Route path="materials-requistion" element={<MaterialsRequisition />} />
+
+
 
 
 

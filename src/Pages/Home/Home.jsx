@@ -149,6 +149,22 @@ const Home = () => {
                 <Link to={"/after-sales-installation-menu"}> After Sales Installation Menu </Link>
             </div>
 
+            <div>
+                <Link to={"/problem-create"}> Problem Create </Link>
+            </div>
+
+            <div>
+                <Link to={"/service-bill-existing-invoice-bill"}> Service Bill Existing Invoice Bill </Link>
+            </div>
+
+            <div>
+                <Link to={"/materials-issues-gate-pass"}> Materials Issues Gate pass </Link>
+            </div>
+
+            <div>
+                <Link to={"/materials-requistion"}> Materials Requistion </Link>
+            </div>
+
 
 
         </div>
