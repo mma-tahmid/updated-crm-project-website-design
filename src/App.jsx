@@ -42,6 +42,7 @@ import ProblemCreate from './UpdatedPages/ProblemCreate'
 import ServiceBillExistingInvoiceBill from './UpdatedPages/ServiceBillExistingInvoiceBill'
 import MaterialsIsssueGatePass from './UpdatedPages/MaterialsIsssueGatePass'
 import MaterialsRequisition from './UpdatedPages/MaterialsRequisition'
+import PurchaseRequisition from './UpdatedPages/PurchaseRequisition'
 
 
 function App() {
@@ -99,6 +100,7 @@ function App() {
           <Route path="service-bill-existing-invoice-bill" element={<ServiceBillExistingInvoiceBill />} />
           <Route path="materials-issues-gate-pass" element={<MaterialsIsssueGatePass />} />
           <Route path="materials-requistion" element={<MaterialsRequisition />} />
+          <Route path="purchase-requistion" element={<PurchaseRequisition />} />
 
 
 

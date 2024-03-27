@@ -5,7 +5,7 @@ const MaterialsRequisitionTable = () => {
         <>
 
 
-            <div className='px-4 sm:px-14 mt-7 sm:text-[10px] lg:text-[15px] overflow-x-auto   '>
+            <div className='px-4 sm:px-14 mt-7 sm:text-[10px] lg:text-[15px] overflow-x-auto  '>
 
                 <table className='table-auto border-2 border-slate-500 border-collapse max-w-[100%]'>
 

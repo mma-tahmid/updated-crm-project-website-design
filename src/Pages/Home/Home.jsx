@@ -165,6 +165,10 @@ const Home = () => {
                 <Link to={"/materials-requistion"}> Materials Requistion </Link>
             </div>
 
+            <div>
+                <Link to={"/purchase-requistion"}> Purchase Requistion </Link>
+            </div>
+
 
 
         </div>
