@@ -1,6 +1,7 @@
 import React from 'react';
 import InputField from '../UpdatedComponents/StatusCard/InputField';
 import { MdModeEdit } from 'react-icons/md';
+import SearchField from '../UpdatedComponents/StatusCard/SearchField';
 
 const ServiceBillExistingInvoiceBill = () => {
     return (
@@ -52,11 +53,134 @@ const ServiceBillExistingInvoiceBill = () => {
                 {/* 3rd Part */}
                 <div className=' shadow-md  mt-4 '>
 
-                    <div className='py-6 bg-[#FDECEC] flex justify-center gap-x-4'>
-                        <div className='text-[#E74A3B]  text-decoration-4 my-auto'>Problem Box</div>
-                        <div className='text-[#E74A3B] my-auto shadow-lg border border-[#E74A3B] rounded-md px-1'> <MdModeEdit /> </div>
+                    <div className='py-6 bg-[#FDECEC] flex sm:flex-row flex-col items-center sm:justify-between px-10 '>
+                        <div className='text-[#E74A3B]  text-decoration-4 my-auto'>Existing Invoice Info</div>
+
+
+                        <div className='flex gap-x-5 mt-3'>
+
+                            <div> <SearchField /> </div>
+
+                            <div> <button className='bg-[#FA6669] text-[white] px-3 py-1 rounded-[4px]'> Close </button> </div>
+
+                        </div>
 
                     </div>
+
+
+                    {/* Check Box  */}
+
+                    <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5  mt-2 px-2 sm:px-4 text-[13px]'>
+                        <div>
+                            <input type="checkbox" id="checkbox" name="checkbox" />
+                            <label className='ml-2' htmlFor="checkbox">Inventory</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="checkbox" name="checkbox" />
+                            <label className='ml-2' htmlFor="checkbox">Customer name </label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="checkbox" name="checkbox" />
+                            <label className='ml-2' htmlFor="checkbox">Mobile no </label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="checkbox" name="checkbox" />
+                            <label className='ml-2' htmlFor="checkbox">Gurranty Card No </label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="checkbox" name="checkbox" />
+                            <label className='ml-2' htmlFor="checkbox"> SB no </label>
+                        </div>
+
+                    </div>
+
+
+                    <div className='mt-3 pb-4'>
+                        <div className='px-4 sm:px-14 mt-7 sm:text-[10px] lg:text-[15px] overflow-x-auto overflow-y-auto max-h-[700px]'>
+
+                            <table className='table-auto border-2 border-slate-500 border-collapse max-w-[100%]'>
+
+                                <thead>
+
+                                    <tr className='bg-[#EEEEEE]'>
+
+                                        <th className='border-2 border-slate-500 w-[400px] py-2'>Invoice no</th>
+
+                                        <th className='border-2 border-slate-500 w-[400px] py-2'>Gurranty card no</th>
+
+                                        <th className='border-2 border-slate-500 w-[400px] py-2'>Ledger name </th>
+
+                                        <th className='border-2 border-slate-500 w-[400px] py-2'> mobile no </th>
+
+                                        <th className='border-2 border-slate-500 w-[400px] py-2'> Ledger address </th>
+
+                                        <th className='border-2 border-slate-500 w-[400px] py-2'> postal code </th>
+
+
+
+                                    </tr>
+
+                                </thead>
+
+
+
+                                <tbody className='text-center'>
+
+                                    <tr>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2 '>Banani TSO</td>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2'>EE294 Md Shami..</td>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2'>AC</td>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2'>ASGA3</td>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2'></td>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2'>   CSE </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2 '>Banani TSO</td>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2'>EE294 Md Shami..</td>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2'>AC</td>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2'>ASGA3</td>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2'></td>
+
+                                        <td className='border-2 border-slate-500 w-[400px] py-2'>   CSE </td>
+
+                                    </tr>
+
+
+
+
+
+
+
+                                </tbody>
+
+                            </table>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
                 </div>
             </div>
         </>

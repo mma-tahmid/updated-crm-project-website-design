@@ -12,7 +12,6 @@ const PurchaseRequistionTable = () => {
 
                 <table className='table-auto border-2 border-slate-500 border-collapse max-w-[100%]'>
 
-
                     <thead>
 
                         <tr>
@@ -27,7 +26,7 @@ const PurchaseRequistionTable = () => {
                                     <div> Required Date:  </div>
                                     <div> PR Date: </div>
 
-                                    <div>PR No: 21</div>
+                                    <div>PR No: 21 </div>
                                 </div>
                             </th>
                         </tr>
@@ -111,16 +110,9 @@ const PurchaseRequistionTable = () => {
 
                         </tr>
 
-
-
-
-
-
-
                     </tbody>
 
                 </table>
-
 
 
             </div>
